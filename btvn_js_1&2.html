@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BTVN_JS-Buổi 1&2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./btvn_js_1&2.css">
+    </head>
+
+<body>
+    <br><br><br>
+    <!-- Bài tập 1 -->
+    <section id="bt1" class="container row">
+        <div class="col-12">
+            <h2 class="text-danger">Bài tập 1: Tính lương nhân viên</h2>
+        </div>
+        <div class="card col-md-6 col-12">
+            <div class="card-header text-primary container">
+                <h4>Tính lương nhân viên</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="">Vui lòng nhập số ngày công của bạn</label>
+                    <input id="so-ngay-cong" type="number" class="form-control" name="" aria-describedby="helpId"
+                        placeholder="">
+                    <small id="helpId" class="form-text text-muted">Vui lòng nhập giá trị là số dương lớn hơn 0, các số
+                        thập phân được phân cách bởi dấu "." (Ví dụ: 5.25, 4.5, 8.75,...)</small>
+                </div>
+            </div>
+            <button id="tinh-luong" class="btn btn-success">Bắt đầu tính</button>
+            <div id="thong-bao-tien-luong" class="card-footer">
+
+            </div>
+        </div>
+        <div class="alert-info col-md-6 col-12">
+            <p>B1: Thiết lập layout có trường nhập số ngày công theo dạng number</p>
+            <p>B2: Thiết lập nút bấm khởi tạo chương trình</p>
+            <p>B3: Viết chương trình DOM giá trị ngày công và lấy giá trị đó nhân cho 100,000 để cho ra được tiền lương</p>
+            <p>B4: Vì ngày công phải là 1 số dương nên viết thông báo loại trừ cho các trường hợp nhập số âm</p>
+            <p>B5: Xuất giá trị tiền lương vào ô Footer</p>
+        </div>
+    </section>
+    <br><br><br>
+    <hr>
+    <br><br><br>
+    <!-- Bài tập 2 -->
+    <section id="bt2" class="container row">
+        <div class="col-12">
+            <h2 class="text-danger">Bài tập 2: Tính giá trị trung bình</h2>
+        </div>
+        <div class="card col-md-6 col-12">
+            <div class="card-header text-primary container">
+                <h4>Tính trung bình</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <label class="col-12" for="">Vui lòng nhập 5 số bạn muốn tính vào các ô bên dưới</label>
+                    <input id="s1" type="number" class="form-control col-md-2 col-6" name="" aria-describedby="helpId"
+                        placeholder="">
+                    <input id="s2" type="number" class="form-control col-md-2 col-6" name="" aria-describedby="helpId"
+                        placeholder="">
+                    <input id="s3" type="number" class="form-control col-md-2 col-6" name="" aria-describedby="helpId"
+                        placeholder="">
+                    <input id="s4" type="number" class="form-control col-md-2 col-6" name="" aria-describedby="helpId"
+                        placeholder="">
+                    <input id="s5" type="number" class="form-control col-md-2 col-6" name="" aria-describedby="helpId"
+                        placeholder="">
+                    <small id="helpId" class="form-text text-muted">Vui lòng nhập giá trị là số, các số thập phân được
+                        phân cách bởi dấu "." (Ví dụ: 5.25, 4.5, 8.75,...)</small>
+                </div>
+            </div>
+            <button id="tinh-tb" class="btn btn-success">Bắt đầu tính</button>
+            <div id="thong-bao-tb" class="card-footer">
+
+            </div>
+        </div>
+        <div class="alert-info col-md-6 col-12">
+            <p>B1: Thiết lập layout có trường nhập 5 số theo dạng number</p>
+            <p>B2: Thiết lập nút bấm khởi tạo chương trình</p>
+            <p>B3: Viết chương trình DOM giá trị của 5 số và lấy tổng 5 giá trị chia cho 5 để cho ra giá trị trung bình</p>
+            <p>B4: Xuất giá trị trung bình vào ô Footer</p>
+        </div>
+    </section>
+    <br><br><br>
+    <hr>
+    <br><br><br>
+    <!-- Bài tập 3 -->
+    <section id="bt3" class="container row">
+        <div class="col-12">
+            <h2 class="text-danger">Bài tập 3: Quy đổi tiền</h2>
+        </div>
+        <div class="card col-md-6 col-12">
+            <div class="card-header text-primary container">
+                <h4>Quy đổi tiền</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="">Vui lòng nhập số tiền bạn cần quy đổi</label>
+                    <input id="so-tien" type="number" class="form-control" name="" aria-describedby="helpId"
+                        placeholder="$">
+                    <small id="helpId" class="form-text text-muted">
+                        <p>Vui lòng nhập giá trị là số dương lớn hơn 0, các số
+                            thập phân được phân cách bởi dấu "." (Ví dụ: 5.25, 4.5, 8.75,...)</p>
+                        <p class="text-danger"><i>Tỷ giá: USD/VND = 23,500</i></p>
+                    </small>
+                </div>
+            </div>
+            <button id="quy-doi" class="btn btn-success">Quy đổi</button>
+            <div id="thong-bao-quy-doi" class="card-footer">
+
+            </div>
+        </div>
+        <div class="alert-info col-md-6 col-12">
+            <p>B1: Thiết lập layout có trường nhập số tiền theo dạng number</p>
+            <p>B2: Thiết lập nút bấm khởi tạo chương trình</p>
+            <p>B3: Viết chương trình DOM giá trị số tiền nhập vào và lấy giá trị đó nhân cho tỷ giá cố định là 23,500 để cho ra được tiền quy đổi</p>
+            <p>B4: Vì số tiền phải là 1 số dương nên viết thông báo loại trừ cho các trường hợp nhập số âm</p>
+            <p>B5: Xuất giá trị quy đổi vào ô Footer</p>
+        </div>
+    </section>
+    <br><br><br>
+    <hr>
+    <br><br><br>
+    <!-- Bài tập 4 -->
+    <section id="bt4" class="container row">
+        <div class="col-12">
+            <h2 class="text-danger">Bài tập 4: Tính diện tích và chu vi hình chữ nhật</h2>
+        </div>
+        <div class="card col-md-6 col-12">
+            <div class="card-header text-primary container">
+                <h4>Tính diện tích và chu vi</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <label class="col-12" for="">Vui lòng nhập chiều dài và chiều rộng của hình</label>
+                    <input id="cd" type="number" class="form-control col-md-6 col-12" name="" aria-describedby="helpId"
+                        placeholder="Chiều dài">
+                    <input id="cr" type="number" class="form-control col-md-6 col-12" name="" aria-describedby="helpId"
+                        placeholder="Chiều rộng">
+                    <small id="helpId" class="form-text text-muted">
+                        <p>Vui lòng nhập giá trị là số dương lớn hơn 0, các số
+                            thập phân được phân cách bởi dấu "." (Ví dụ: 5.25, 4.5, 8.75,...)</p>
+                    </small>
+                </div>
+            </div>
+            <button id="tinh" class="btn btn-success">Bắt đầu tính</button>
+            <div id="thong-bao-ket-qua" class="card-footer">
+
+            </div>
+        </div>
+        <div class="alert-info col-md-6 col-12">
+            <p>B1: Thiết lập layout có trường nhập chiwu62 dài và chiều rộng theo dạng number</p>
+            <p>B2: Thiết lập nút bấm khởi tạo chương trình</p>
+            <p>B3: Viết chương trình DOM giá trị chiều dài và chiều rộng và lấy giá trị đó để tính theo công thức và cho ra được chu vi và diện tích</p>
+            <p>B4: Vì giá trị đo phải là 1 số dương nên viết thông báo loại trừ cho các trường hợp nhập số âm</p>
+            <p>B5: Xuất giá trị Chu vi và Diện tích vào ô Footer</p>
+        </div>
+    </section>
+    <br><br><br>
+    <hr>
+    <br><br><br>
+    <!-- Bài tập 5 -->
+    <section id="bt5" class="container row">
+        <div class="col-12">
+            <h2 class="text-danger">Bài tập 5: Tổng 2 ký số</h2>
+        </div>
+        <div class="card col-md-6 col-12">
+            <div class="card-header text-primary container">
+                <h4>Tính tổng 2 ký số</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <label class="col-12" for="">Vui lòng nhập số cần tính</label>
+                    <input id="so" type="number" class="form-control col-md-6 col-12" name="" aria-describedby="helpId"
+                        placeholder="Số dưới 3 chữ số">
+                    <small id="helpId" class="form-text text-muted">
+                        <p>Vui lòng chỉ nhập số nguyên dưới 3 chữ số, trong trường hợp là số nguyên âm, phần mềm sẽ lấy giá trị tuyệt đối của số để tính, các số có 1 chữ số được tính hàng chục bằng 0</p>
+                    </small>
+                </div>
+            </div>
+            <button id="tinh-ky-so" class="btn btn-success">Bắt đầu tính</button>
+            <div id="thong-bao-tong" class="card-footer">
+
+            </div>
+        </div>
+        <div class="alert-info col-md-6 col-12">
+            <p>B1: Thiết lập layout có trường nhập số có 2 chữ số theo dạng number</p>
+            <p>B2: Thiết lập nút bấm khởi tạo chương trình</p>
+            <p>B3: Viết chương trình DOM giá trị số và tính tổng 2 ký số theo công thức</p>
+            <p>B4: Vì số có 2 chữ số phải lớn hơn -100 và nhỏ hơn 100, đồng thời các số có 1 chữ số được tính cho hàng chục bằng 0, viết thông báo loại các số có giá trị tuyệt đối > 99</p>
+            <p>B5: Xuất giá trị tống vào ô Footer</p>
+        </div>
+    </section>
+    <br><br><br>
+    <hr>
+    <div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="./btvn_js_1&2.js"></script>
+    </div>
+</body>
+
+</html>
