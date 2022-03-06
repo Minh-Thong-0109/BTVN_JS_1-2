@@ -64,11 +64,13 @@ document.getElementById("tinh").onclick = function () {
 
 document.getElementById("tinh-ky-so").onclick = function () {
     var So = document.getElementById("so").value;
+    var LSo = So.length;
+    console.log(LSo);
     var TSo = Math.abs(So);
     var Tong = TSo%10 + (TSo-TSo%10)/10;
-    if (TSo > 99) {
+    if (TSo > 99 || LSo > 2) {
       document.getElementById("thong-bao-tong").innerHTML =
-        "<p class='alert alert-danger'>Vui lòng nhập số dưới 3 chữ số";
+        "<p class='alert alert-danger'>Vui lòng nhập số nguyên dưới 3 chữ số";
     } else {
       document.getElementById("thong-bao-tong").innerHTML =
         "<h5 class='text-success'>Tổng 2 ký số: </h5><h4 class='text-danger'>" +
