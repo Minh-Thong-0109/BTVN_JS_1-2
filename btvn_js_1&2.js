@@ -64,9 +64,10 @@ document.getElementById("tinh").onclick = function () {
 
 document.getElementById("tinh-ky-so").onclick = function () {
     var So = document.getElementById("so").value;
-    var LSo = So.length;
-    console.log(LSo);
     var TSo = Math.abs(So);
+    var TSos = TSo.toString(); 
+    var LSo = TSos.length;
+    console.log(So, TSo, LSo);
     var Tong = TSo%10 + (TSo-TSo%10)/10;
     if (TSo > 99 || LSo > 2) {
       document.getElementById("thong-bao-tong").innerHTML =
